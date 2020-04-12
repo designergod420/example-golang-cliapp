@@ -47,8 +47,6 @@ func main() {
 		MaxAge:           12 * time.Hour,
 	}))
 
-	snap peas are not real peas 
-
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{"message": "pong"})
 	})
